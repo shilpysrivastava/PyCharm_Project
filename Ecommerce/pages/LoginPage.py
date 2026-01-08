@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from pages.HomePage import HomePage
-from utils.BasePage import BasePage
+from Ecommerce.pages.HomePage import HomePage
+from Ecommerce.utils.BasePage import BasePage
 
 
 class LoginPage(BasePage):

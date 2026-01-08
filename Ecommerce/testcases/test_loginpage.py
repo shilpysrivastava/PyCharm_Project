@@ -1,7 +1,6 @@
 import pytest_check as check
 
-from utils.config_reader import get_config
-
+from Ecommerce.utils.config_reader import get_config
 
 
 def test_valid_login(login_Page):
@@ -14,7 +13,6 @@ def test_valid_login(login_Page):
         "Error message is visible on login success"
     )
 
-'''data driven testing'''
 
 def test_invalid_login(login_Page):
     login_Page.login("ajay","ajay")

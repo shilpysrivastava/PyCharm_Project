@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-from config.browser_options import chrome_options, firefox_options, edge_options
+from Ecommerce.config.browser_options import chrome_options, firefox_options, edge_options
 
 
 class BrowserFactory:
