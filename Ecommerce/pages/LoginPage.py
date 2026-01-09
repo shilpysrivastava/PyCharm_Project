@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 
 from Ecommerce.pages.HomePage import HomePage
@@ -16,10 +17,14 @@ class LoginPage(BasePage):
         super().__init__(driver)
 
     def login(self, username, password):
-        self.type(self.username, username)
-        self.type(self.password, password)
-        self.click(self.checkbox)
-        self.click(self.signUp_button)
+        with allure.step("Enter Username"):
+            self.type(self.username, username)
+        with allure.step("Enter password"):
+            self.type(self.password, password)
+        with allure.step("Click checkbox"):
+            self.click(self.checkbox)
+        with allure.step("Click signuu button"):
+            self.click(self.signUp_button)
 
 
         return HomePage(self.driver)

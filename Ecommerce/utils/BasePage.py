@@ -3,7 +3,7 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from utils.config_reader import get_config
+from Ecommerce.utils.config_reader import get_config
 
 
 class BasePage:

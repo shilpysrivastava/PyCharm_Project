@@ -8,13 +8,16 @@ getoption -> Used to fetch a command-line option
 Here browser name is given by us through command line argument which help in selecting the browser at runtime
 '''
 
-import pytest
-from selenium import webdriver
+from Ecommerce.config.browser_factory import BrowserFactory
+from Ecommerce.pages.LoginPage import LoginPage
+from Ecommerce.utils.config_reader import get_config
 
-from config.browser_factory import BrowserFactory
-from pages.HomePage import HomePage
-from pages.LoginPage import LoginPage
-from utils.config_reader import get_config
+
+import pytest
+import allure
+
+
+
 
 @pytest.fixture()
 def setup():
@@ -51,3 +54,19 @@ def checkout_page(home_Page):
 def address_page(checkout_page):
     return checkout_page.check_out()
 
+
+
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    report = outcome.get_result()
+
+    # Take screenshot only if test failed during execution
+    if report.when == "call" and report.failed:
+        driver = item.funcargs.get("driver")
+        if driver:
+            allure.attach(
+                driver.get_screenshot_as_png(),
+                name="Failure Screenshot",
+                attachment_type=allure.attachment_type.PNG
+            )
