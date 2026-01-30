@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
-
-from utils.BasePage import BasePage
+from Ecommerce.utils.BasePage import BasePage
 
 
 class AdressPage(BasePage):

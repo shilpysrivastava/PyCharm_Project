@@ -1,9 +1,6 @@
-import time
-
 from selenium.webdriver.common.by import By
-
-from pages.CheckOutPage import CheckoutPage
-from utils.BasePage import BasePage
+from Ecommerce.pages.CheckOutPage import CheckoutPage
+from Ecommerce.utils.BasePage import BasePage
 
 
 class HomePage(BasePage):

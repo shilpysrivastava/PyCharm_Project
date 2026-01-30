@@ -3,7 +3,7 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from utils.config_reader import get_config
+from Ecommerce.utils.config_reader import get_config
 
 
 class BasePage:
@@ -30,6 +30,7 @@ class BasePage:
 
     def wait_for_all_elements(self, locator):
         return self.wait.until(EC.presence_of_all_elements_located(locator))
+
 
     # =========================
     # ACTION METHODS

@@ -1,8 +1,6 @@
 from selenium.webdriver.common.by import By
-
-from pages.AddressPage import AdressPage
-from utils.BasePage import BasePage
-
+from Ecommerce.pages.AddressPage import AdressPage
+from Ecommerce.utils.BasePage import BasePage
 
 class CheckoutPage(BasePage):
 
