@@ -1,0 +1,16 @@
+# Core testing framework
+pytest == 9.0.2
+
+#BDD Supoort
+pytest-bdd == 8.1.0
+
+#Http request for API Testing
+requests ==  2.32.5
+
+#Data handling
+jsonschema == 4.26.0
+
+#Parllel execution
+
+
+#Reporting
