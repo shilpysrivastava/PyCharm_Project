@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1d0fa45e-313e-4f01-90ee-2d9fe610d9ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PlaywrightTutorial/Elements/test_demo_elements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PlaywrightTutorial/playwrightBasic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_loginpage.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_loginpage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/BasePage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

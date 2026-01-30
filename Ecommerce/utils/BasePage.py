@@ -31,6 +31,7 @@ class BasePage:
     def wait_for_all_elements(self, locator):
         return self.wait.until(EC.presence_of_all_elements_located(locator))
 
+
     # =========================
     # ACTION METHODS
     # =========================

@@ -16,9 +16,6 @@ from Ecommerce.utils.config_reader import get_config
 import pytest
 import allure
 
-
-
-
 @pytest.fixture()
 def setup():
     browser_name = get_config("env", "browser")
